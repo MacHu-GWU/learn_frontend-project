@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chosen demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<div>
+	<strong>Multiple Choice</strong>
+	<select multiple name="multiple_choice" class="chosen-select" data-placeholder="choose some fruit, e.g. Apple, Banana ..." style="width:605px;" tabindex="2">
+		<option value="Apple" >Apple</option>
+		<option value="Banana" >Banana</option>
+		<option value="Cheery" >Cheery</option>
+	</select>
+</div>
+
+
+<!-- Script -->
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- chosen -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.jquery.js"></script>
+<script type="text/javascript">
+	$(".chosen-select").chosen({no_results_text: "No Matching Genres!", max_selected_options: 5, search_contains: true}); 
+</script>
+
+</body>
+</html>

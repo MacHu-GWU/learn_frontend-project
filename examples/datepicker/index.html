@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>datepicker demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<input id="meeting-date" type="text" name="date" placeholder="Pick a Date">
+
+
+<!-- Script -->
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- datepicker -->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+	$(document).ready( function() {
+	  	$(function() {
+	    	$("#meeting-date").datepicker( {
+	    		changeMonth : true,
+	    		changeYear : true,
+	    		firstDay: 1
+	    	} );
+	  	});
+	});
+</script>
+
+</body>
+</html>

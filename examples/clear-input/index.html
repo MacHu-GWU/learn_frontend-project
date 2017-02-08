@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<form action="/" method="POST">
+		<input name="first" value="first"/><input type="button" class="reset-button" value="reset"><br />
+		<input name="second" value="second" /><input type="button" class="reset-button" value="reset"><br />
+		<input type="Submit" value="Submit"><br />
+	</form>
+	
+	<!-- Script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		function resetForm(){
+			$(this.previousSibling).val(function(){
+		  	return this.defaultValue;
+		  });
+		}
+		$("input[class='reset-button']").bind("click", resetForm );
+	</script>
+</body>
+</html>
