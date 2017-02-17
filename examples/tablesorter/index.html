@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tablesorter demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<table id="my-talbe" border="1">
+	<thead>
+		<tr>
+			<td>A</td>
+			<td>B</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>1</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<!-- CSS -->
+<style>
+.scroll-to-top{
+	position:fixed;
+	top:75px;
+	right:40px;
+}
+</style>
+<!-- Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.28.5/js/jquery.tablesorter.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() 
+	    { 
+	        $("#my-talbe").tablesorter(); 
+	    } 
+	);
+</script>
+
+</body>
+</html>
